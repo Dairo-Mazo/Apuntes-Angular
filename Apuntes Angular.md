@@ -1,4 +1,4 @@
-#¿Qué es Angular?
+# ¿Qué es Angular?
 
 Angular es un popular framework de JavaScript para la creación de aplicaciones web, que ha recibido en 2017 un avance importante frente a la versiones anteriores,
 mejorando su rendimiento, tamaño y sintaxis. En este curso aprenderás a crear aplicaciones con Angular, avanzarás paso a paso en su uso, desde la instalación,
@@ -6,7 +6,7 @@ configuración y arquitectura hasta la publicación final de una aplicación. Al
 elegida por miles de desarrolladores en el mundo y mantenida por Google.
 
 
-#Modulos
+# Modulos
 
 Agrupa diferentes funcionalidades de la aplicación como rutas, servicios, librerias, etc, todos los elementos con los que vamos a trabajar en nuestra app
 
@@ -21,7 +21,7 @@ Directivas estructurales agregan/eliminan elementos
 Directivas de atributo cambian la aparencia o comportamiento de elementos
 
 
-#Componentes
+# Componentes
 
 Para generar un  componente utilize el siguiente comando de angular CLI: ng generate component <nombre_del_componente>
 
@@ -49,7 +49,7 @@ NgOnit(){}: Se inicializa al momento de utilizar el componente
 
 Para mostrar variables de TS en HTML podemos utilizar llaves dobles {{ variable }}
 
-#Enviar datos a un componente:
+# Enviar datos a un componente:
 
 Podemos enviar datos del componente padre al hijo con @input. Para ello debemos modificar el selector hijo agregando entre corchetes [] nombre de la variable y
 asignandole un valor, EJ:
@@ -61,7 +61,7 @@ En el componente hijo se debe importa @Input y se debe colocar el nombre de la v
 TS: @Input() variable
 
 
-#Directiva NgIf
+# Directiva NgIf
 
 Esta directiva sirve para ocultar o mostrar secciones de HTML, EJ:
 
@@ -83,7 +83,7 @@ Uso del ELSE con la directiva NgIf:
 </ng-template>
 
 
-#Controlar estilos con NgStyle y NgClass
+# Controlar estilos con NgStyle y NgClass
 
 NgStyle es una directiva que nos permite injectar directamente estilos en un elemento de HTML:
 
@@ -96,7 +96,7 @@ NgClass es una directiva muy parecida a NgStyle, pero lo que hace es injcetar un
 https://angular.io/api/common/NgClass
 
 
-#NgFor
+# NgFor
 
 Esta directiva sirve para desplegar una lista de Objetos en HTML
 
@@ -110,7 +110,7 @@ HTML:
 Se puede obtener el index de un elemento:  <li *NgFor="let item for object; i = index"> {{item}} {{i}} </li>
 
 
-#Enrutamiento angular
+# Enrutamiento angular
 
 Se genera el proyecto y se marca la opción de agregar routing.
 
@@ -151,14 +151,14 @@ Constructor(private Ruta: ActivateRoute){
 this.variable = this.ruta.paraMap.get('variable de la ruta');
 
 
-#Servicios en Angular
+# Servicios en Angular
 
 Un servicio nos permite reutilizar código o hacer comunicación de información a varios componentes
 
 Para generar un servicio se debe lanzar el comando:  ng generate service miServicio
 
 
-#Conectar o obtener datos externos
+# Conectar o obtener datos externos
 
 Para trabajar con datos externos es necesario importar en el archivo de modulos HttpClientModule
 
@@ -168,7 +168,7 @@ nos debemos suscribir, ya que nos devuelve un observable
 Para el manejo de errores de conexión HTTP, se agrega un parametro adicional en el subscribe que valida la llamada de este
 
 
-#Renderer
+# Renderer
 
 Sirve para trabajar un elemento de HTML que tengamos en el componenete, para utilizarlo se debe importar Renderer2, se inicializa en el Constructor
 
@@ -180,7 +180,7 @@ Docu:
 https://angular.io/api/core/Renderer2#renderer2
 
 
-#Optimizar
+# Optimizar
 
 ng build --prod
 
