@@ -10,11 +10,11 @@ elegida por miles de desarrolladores en el mundo y mantenida por Google.
 
 Agrupa diferentes funcionalidades de la aplicación como rutas, servicios, librerias, etc, todos los elementos con los que vamos a trabajar en nuestra app
 
-#Plantillas 
+# Plantillas 
 
 Parte visual de un componente, HTML con inyección de datos
 
-#Directivas
+# Directivas
 
 Directivas estructurales agregan/eliminan elementos
 
@@ -33,18 +33,20 @@ Para generar un  componente utilize el siguiente comando de angular CLI: ng gene
 
 Los decoradores nos van a permitir configurar el componente, dentro de los decoradores tenemos 3 propiedades:
 
-Selector: Es la forma de invocar o llamar el componente en HTML
-
-templateUrl: Define la ruta o la plantilla del componenete
-
-styleUrls: Define la ruta de los stylos
-
+### Selector: 
+Es la forma de invocar o llamar el componente en HTML
+### templateUrl: 
+Define la ruta o la plantilla del componenete
+### styleUrls: 
+Define la ruta de los stylos
 
 Dentro de la clase de un componente podemos encontrar dos elementos:
 
-Constructor(){}: Se inicializa junto con la aplicación
+### Constructor(){}: 
+Se inicializa junto con la aplicación
 
-NgOnit(){}: Se inicializa al momento de utilizar el componente
+### NgOnit(){}: 
+Se inicializa al momento de utilizar el componente
 
 
 Para mostrar variables de TS en HTML podemos utilizar llaves dobles {{ variable }}
@@ -126,7 +128,7 @@ para que funcionen los enrutamientos se debe definir en el archivo app.component
 
 <router-outlet> </router-outlet>
 
-== Navegación por rutas ==
+# Navegación por rutas
 
 Utilizar los atributos que Angular posee sobre el enrutamiento ayudará a indexar mucho mejor las aplicaciones
 
